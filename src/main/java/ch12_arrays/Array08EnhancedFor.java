@@ -26,6 +26,7 @@ public class Array08EnhancedFor {
     public static void main(String[] args) {
         int[] numbers = new int[200];
 
+
         // 1부터 200까지 대입하시오.
         for (int i = 0 ; i < numbers.length ; i++) {
             numbers[i] = (i+1);
