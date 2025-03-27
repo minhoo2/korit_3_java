@@ -1,4 +1,4 @@
-package ch13_abstraction;
+package ch13_abstraction.abstract_class;
 
 public abstract class Factory {
     private String name;

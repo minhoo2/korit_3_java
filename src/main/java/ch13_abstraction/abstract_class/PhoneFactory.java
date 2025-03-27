@@ -1,6 +1,6 @@
-package ch13_abstraction;
+package ch13_abstraction.abstract_class;
 
-public class PhoneFactory extends Factory{
+public class PhoneFactory extends Factory {
 
     // 생성자 및 메서드를 일일이 복사 및 타이핑할 필요가 없다
     // -> 빨간거 뜰 때마다 딸깍딸깍했다

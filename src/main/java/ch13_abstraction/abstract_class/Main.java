@@ -1,4 +1,4 @@
-package ch13_abstraction;
+package ch13_abstraction.abstract_class;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,5 +34,17 @@ public class Main {
         // 서로 다른 방식으로 굴러갈 경우에만 이루어지면 되고,
         // 부모 클래스의 메서드를 완전히 동일하게 자식 클래스에서 사용할 경우에는
         // 굳이 alt + ins를 통해서 override methods를 할 필요가 없습니다.
+
+        TabletFactory tabletFactory1 = new TabletFactory("애플 태블릿 공장");
+        tabletFactory1.upgrade("아이패드 프로 13인치 8세대");
+        System.out.println();
+
+        tabletFactory1.setName("구글 태블릿 공장");
+        System.out.println("현재 공장은 " + tabletFactory1.getName() + "으로 변경되었습니다.");
+
+        tabletFactory1.produce("구글 태블릿");
+        tabletFactory1.manage();
+        tabletFactory1.upgrade("구글 태블릿 10인치 2세대");
+
     }
 }
